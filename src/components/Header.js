@@ -56,7 +56,7 @@ const NavMenu = styled.div`
   margin-left: 20px;
   align-items: center;
   justify-content: center;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   a {
     display: flex;
     align-items: center;
@@ -76,7 +76,7 @@ const NavMenu = styled.div`
         position: absolute;
         left: 0;
         right: 0;
-        bottom: -9px;
+        bottom: -6px;
         opacity: 0;
         transform: scaleX(0);
         transform-origin: left center;
