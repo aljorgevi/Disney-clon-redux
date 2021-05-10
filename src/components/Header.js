@@ -55,6 +55,8 @@ const NavMenu = styled.div`
   flex: 1;
   margin-left: 20px;
   align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
   a {
     display: flex;
     align-items: center;
@@ -77,6 +79,7 @@ const NavMenu = styled.div`
         bottom: -9px;
         opacity: 0;
         transform: scaleX(0);
+        transform-origin: left center;
         transition: all 250ms cubic-bezier(0.25, 0.56, 0.45, 0.94) 0s;
       }
     }
