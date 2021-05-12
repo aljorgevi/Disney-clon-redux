@@ -30,7 +30,10 @@ const Container = styled.div`
   display: grid;
   padding: 30px 0px 26px;
   grid-gap: 25px;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  @media (min-width: 767px) {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
 `;
 
 const Wrap = styled.div`

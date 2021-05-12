@@ -11,18 +11,21 @@ function ImgSlider() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
   };
   return (
     <Carousel {...settings}>
       <Wrap>
-        <img src="/images/slider-badging.jpg" alt="" />
+        <img src="/images/slider-badging.jpg" alt="slider" />
       </Wrap>
       <Wrap>
-        <img src="/images/slider-badag.jpg" alt="" />
+        <img src="/images/slider-badag.jpg" alt="slider" />
       </Wrap>
       <Wrap>
-        <img src="/images/slider-badag.jpg" alt="" />
+        <img src="/images/slider-scale.jpg" alt="slider" />
+      </Wrap>
+      <Wrap>
+        <img src="/images/slider-scales.jpg" alt="slider" />
       </Wrap>
     </Carousel>
   );
@@ -32,6 +35,20 @@ export default ImgSlider;
 
 const Carousel = styled(Slider)`
   margin-top: 20px;
+
+  .slick-prev {
+    margin-left: 20px;
+    @media (min-width: 767px) {
+      margin-left: 0px;
+    }
+  }
+
+  .slick-next {
+    margin-right: 20px;
+    @media (min-width: 767px) {
+      margin-right: 0px;
+    }
+  }
 
   ul li button {
     &:before {
