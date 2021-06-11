@@ -93,6 +93,7 @@ const ImageTitle = styled.div`
 const Controls = styled.div`
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 `;
 const PlayButton = styled.button`
   border-radius: 4px;
